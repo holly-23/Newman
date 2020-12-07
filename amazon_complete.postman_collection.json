@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "50a66f82-fb59-476b-a9ef-6d79404b4fa7",
+		"name": "amazon complete",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "restful booker",
+			"item": [
+				{
+					"name": "https://restful-booker.herokuapp.com/auth",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\" : \"admin\",\n    \"password\" : \"password123\"\n}"
+						},
+						"url": {
+							"raw": "https://restful-booker.herokuapp.com/auth",
+							"protocol": "https",
+							"host": [
+								"restful-booker",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "https://completion.amazon.com/api/2017/suggestions?mid=ATVPDKIKX0DER&alias=aps&prefix=c",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (X11; Linux x86_64; rv:68.0) Gecko/20100101 Firefox/68.0"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json, text/javascript, */*; q=0.01"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5"
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.amazon.com/"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.amazon.com"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					}
+				],
+				"url": {
+					"raw": "https://completion.amazon.com/api/2017/suggestions?mid=ATVPDKIKX0DER&alias=aps&prefix=c",
+					"protocol": "https",
+					"host": [
+						"completion",
+						"amazon",
+						"com"
+					],
+					"path": [
+						"api",
+						"2017",
+						"suggestions"
+					],
+					"query": [
+						{
+							"key": "mid",
+							"value": "ATVPDKIKX0DER"
+						},
+						{
+							"key": "alias",
+							"value": "aps"
+						},
+						{
+							"key": "prefix",
+							"value": "c"
+						}
+					]
+				},
+				"description": "tau"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

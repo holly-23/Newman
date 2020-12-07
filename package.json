@@ -1,0 +1,19 @@
+{
+  "name": "newman-practice",
+  "version": "1.0.0",
+  "description": "Newman Practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:holly-23/Newman.git"
+  },
+  "author": "Holly Dickinson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/holly-23/Newman/issues"
+  },
+  "homepage": "https://github.com/holly-23/Newman#readme"
+}
