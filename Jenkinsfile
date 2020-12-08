@@ -12,7 +12,7 @@ pipeline{
     stage("test") {
       steps {
         echo 'testing the application...'
-        readJSON file: 'dir/amazon_complete.postman_collection.json'
+        readJSON file: 'amazon_complete.postman_collection.json'
       }
       
     } 
